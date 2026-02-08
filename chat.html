@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ITRCS Chat</title>
+<link rel="stylesheet" href="itrc.css">
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="firebase.js"></script>
+</head>
+<body>
+<div id="msgBox"></div>
+
+  
+
+<div class="container" id="app">
+
+  <div class="sidebar">
+    <div class="logo">ITRCS</div>
+    <div class="user active" id="user1">Alok</div>
+    <div class="user" id="user2">Rahul</div>
+    <div class="user" id="user3">Support</div>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div class="chat-box">
+    <div class="chat-header">
+      <span id="chatName"></span>
+      <small id="status">Offline</small>
+    </div>
+
+    <div class="chat-messages" id="chat"></div>
+
+    <div class="chat-input">
+      <input type="text" id="text" placeholder="Message ITRCS...">
+      <button onclick="send()">➤</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="itrc.js"></script>
+</body>
+</html>
